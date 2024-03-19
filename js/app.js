@@ -86,8 +86,8 @@ console.log(arrayFormattedNames);
 const voto70 = [];
 const voto70Id120 = [];
 
-for (let i = 0; i < elenco.length; i++) {
-    const element = elenco[i];
+for (let i = 0; i < arrayFormattedNames.length; i++) {
+    const element = arrayFormattedNames[i];
 
     if (element.voto > 70) {
         voto70.push(element);
