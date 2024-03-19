@@ -1,3 +1,24 @@
+// SNACK 1
+
+const tavoloVip = [
+    'Brad Pitt',
+    'Johnny Depp',
+    'Lady Gaga',
+    'Cristiano Ronaldo',
+    'Georgina Rodriguez',
+    'Chiara Ferragni',
+    'Fedez',
+    'George Clooney',
+    'Amal Clooney',
+    'Maneskin'
+];
+
+
+tavoloObj = tavoloVip.map(function(element, index) {return {nomeTavolo: 'Tavolo Vip', nomeVip: element, posto: index + 1}})
+console.log(tavoloObj);
+
+
+
 // SNACK 2
 
 const elenco = [
@@ -64,11 +85,12 @@ const voto70Id120 = [];
 
 for (let i = 0; i < elenco.length; i++) {
     const element = elenco[i];
-    
+
     if (element.voto > 70) {
         voto70.push(element);
-    } else if (element.voto > 70 && element.id > 120) {
-        voto70Id120.push(element);
+        if (element.id > 120) {
+            voto70Id120.push(element);
+        }
     }
 }
 
