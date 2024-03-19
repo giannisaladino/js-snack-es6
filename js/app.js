@@ -18,7 +18,6 @@ tavoloObj = tavoloVip.map(function(element, index) {return {nomeTavolo: 'Tavolo 
 console.log(tavoloObj);
 
 
-
 // SNACK 2
 
 const elenco = [
@@ -72,7 +71,11 @@ const arrayFormattedNames = [];
 for (let i = 0; i < elenco.length; i++) {
     const element = elenco[i];
     const formattedNames = capitalize(element.nome)
-    arrayFormattedNames.push(formattedNames)
+    arrayFormattedNames.push({
+        id: element.id,
+        nome: formattedNames,
+        voto: element.voto
+    })
     // console.log(formattedName);
 }
 
