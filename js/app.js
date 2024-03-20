@@ -202,3 +202,6 @@ for (let i = 0; i < teams.length; i++) {
 }
 
 // Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+
+
+//devo scappareee per adesso
