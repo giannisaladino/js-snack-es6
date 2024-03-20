@@ -99,3 +99,34 @@ for (let i = 0; i < arrayFormattedNames.length; i++) {
 
 console.log(voto70);
 console.log(voto70Id120);
+
+
+// SNACK 3
+// Creare un array di oggetti:
+// Ogni oggetto descriverà una bici da corsa con le seguenti proprietà: nome e peso.
+// Stampare in console la bici con peso minore utilizzando destructuring e template literal
+
+const bici = [
+    {
+        nome: 'Scott',
+        peso: 12,
+    },
+    {
+        nome: 'Giant',
+        peso: 14,
+    },
+    {
+        nome: 'Bottecchia',
+        peso: 15,
+    },
+    {
+        nome: 'KTM',
+        peso: 11,
+    }
+]
+
+for (let i = 0; i < bici.length; i++) {
+    const pesoBici = bici[i].peso;
+    console.log(pesoBici);
+    
+}
